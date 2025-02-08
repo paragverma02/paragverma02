@@ -39,6 +39,11 @@
   <img src="https://github-readme-activity-graph.cyclic.app/graph?username=paragverma02&theme=react-dark" alt="GitHub Activity Graph" />
 </p>
 
+### 📈 GitHub Contribution Graph
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=paragverma02&theme=react-dark" alt="GitHub Activity Graph" />
+</p>
+
 ---
 
 ### 🚀 Featured Projects
