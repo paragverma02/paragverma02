@@ -1,7 +1,24 @@
-## 🚀 Featured Projects
-<!-- Automatically generated -->
-<p align="left">
-  <a href="https://github.com/paragverma02?tab=repositories">
-    <img src="https://github-readme-stats.vercel.app/api?username=paragverma02&show_icons=true&hide_border=true&count_private=true&theme=radical" />
-  </a>
-</p>
+name: Update README with Latest Repositories
+
+on:
+  schedule:
+    - cron: "0 0 * * *"  # Runs daily at midnight
+  workflow_dispatch:  # Allows manual triggering
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Update README
+        uses: jasonetco/readme-box@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          file: README.md
+          section: featured-projects
+          content: |
+            ## 🚀 Featured Projects
+            Here are some of my latest repositories:
+            {% for repo in user.repositories|sort(attribute='pushed_at', reverse=true)[:5] %}
+            - [{{ repo.name }}]({{ repo.html_url }}) - {{ repo.description or 'No description provided' }}
+            {% endfor %}
