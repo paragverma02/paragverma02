@@ -10,7 +10,7 @@
 
 ### 🌟 About Me
 - 🔭 I’m currently working on **[Spotify Clone](https://github.com/yourusername/spotify-clone)**
-- 🌱 I’m learning **Next.js, Tailwind CSS, and GraphQL**
+- 🌱 I’m learning ** JavaScript & React.js**
 - 💬 Ask me about **React, JavaScript.
 - ⚡ Fun fact: I love coding while listening to Lo-Fi beats! 🎵
 
